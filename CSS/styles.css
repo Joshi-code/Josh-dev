@@ -173,6 +173,10 @@ a:hover{
     color:rgb(92, 152, 152); 
 }
 
+p{
+    margin-left: 20px;
+}
+
 /*Get in Touch buttons*/
 #but{
     width:180px;
@@ -330,4 +334,74 @@ input{
     color:black;
     background-color: white;
     border: 3px solid rgb(92, 152, 152);
+}
+
+.foot{
+    color:white;
+    text-align: center;
+}
+
+.menu{
+    position: relative;
+    top:20px;
+    left:700px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+/*MEDIA QUERY*/
+
+@media(max-width:768px){
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    .navbar a{
+        display: block;
+    }
+
+    .navbar .menu{
+        display:none;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #but{
+        position: relative;
+        right: 30px;
+    }
+
+    ul li{
+        position: relative;
+        right: 500px;
+    }
+
+    input{
+        position: relative;
+        right:70px;
+        width: 150px;
+    }
+
+    label{
+        position: relative;
+        right: 20px;
+    }
+
+    .cbtn{
+        position: relative;
+        right:80px;
+    }
+
+    .foot{
+        text-align: center;
+        font-size: 10px;
+    }
 }
